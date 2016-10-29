@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark">
+
+    <ImageView
+        android:layout_width="300dp"
+        app:srcCompat="@android:color/darker_gray"
+        android:id="@+id/imageView4"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="300dp" />
+
+    <ProgressBar
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar3"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView10"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintRight_toLeftOf="@+id/textView11"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_marginBottom="8dp"
+        tools:visibility="visible"
+        android:visibility="visible"
+        android:progress="50"
+        android:progressTint="@android:color/background_light" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/ic_play_circle_outline_black_24dp"
+        android:backgroundTint="@android:color/background_light" />
+
+    <Button
+        android:layout_height="48dp"
+        android:id="@+id/button2"
+        android:background="@drawable/ic_skip_next_black_18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/button"
+        android:layout_marginLeft="8dp"
+        android:layout_width="48dp"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:backgroundTint="@android:color/background_light" />
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/button5"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:background="@drawable/ic_skip_previous_black_18dp"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintRight_toLeftOf="@+id/button"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="@android:color/background_light" />
+
+    <Button
+        android:layout_height="48dp"
+        android:id="@+id/button6"
+        android:background="@drawable/ic_shuffle_black_18dp"
+        style="@style/Widget.AppCompat.Button.Small"
+        app:layout_constraintBottom_toBottomOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="@+id/button5"
+        android:layout_width="48dp"
+        app:layout_constraintRight_toLeftOf="@+id/button5"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="#00ff00"/>
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/button7"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:background="@drawable/ic_repeat_black_18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/button2"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/button2"
+        android:layout_marginLeft="8dp"
+        android:backgroundTint="#00ff00" />
+
+    <TextView
+        android:text="#:##"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textSize="14sp"
+        app:layout_constraintRight_toLeftOf="@+id/button6"
+        app:layout_constraintTop_toTopOf="@+id/progressBar3"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar3"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:text="#:##"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        app:layout_constraintLeft_toRightOf="@+id/button7"
+        app:layout_constraintTop_toTopOf="@+id/progressBar3"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar3"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:text="Song Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar3"
+        android:layout_marginBottom="8dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:text="Artist Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        app:layout_constraintRight_toRightOf="@+id/textView12"
+        app:layout_constraintLeft_toLeftOf="@+id/textView12"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        android:textSize="12sp"
+        android:textColor="#ffffff" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        app:buttonTint="#00ff00" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:buttonTint="#ffffff" />
+
+</android.support.constraint.ConstraintLayout>
